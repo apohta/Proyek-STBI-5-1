@@ -1,0 +1,14 @@
+Kami akan melakukan eksperimen pada dua dataset yaitu CISI ((Centre for Inventions and Scientific Information)  dan F.R.I.E.N.D.S Dialogue. Dataset CISI merupakan dataset yang dikumpulkan oleh Pusat Penemuan dan Informasi Ilmiah ("CISI") yang bertujuan untuk digunakan untuk membangun model pencarian informasi di mana kueri yang diberikan akan mengembalikan daftar ID dokumen yang relevan dengan kueri. Dataset F.R.I.E.N.D.S  merupakan dataset yang berisikan dialogue dari film F.R.I.E.N.D.S untuk setiap season dan episode  
+
+Berdasarkan dataset yang digunakan maka kami akan melakukan evaluasi dengan menggunakan 
+
+Precision is a number that measures the number of correct instances retrieved divided by all instances retrieved.
+
+ketiga evaluasi metriks yang digunakan dalam melakukan evaluasi terhadap dataset yang digunakan, memiliki fungsi yang berbeda-beda
+
+Berdasarkan penelitian tersebut, maka apabilan nilai precision tinggi maka terdapat beberapa dokumen tidak sesuai dengan query yang tidak terdeteksi bobot dokumenya.
+
+Information Retrival (IR) atau temu balik informasi merupakan sebuah cara untuk mengorganisasikan, merepresentasikan, menyimpan, dan melakukan pencarian informasi dalam bentuk teks dan multimedia. Dalam information retrival bertujuan untuk menampi
+
+
+Sistem temu kembali terdiri dari indexing subsystem dan searching subsystem, untuk mengolah kumpulan dokumen dan kata kunci sehingga dapat mengembalikan dokumen yang relevan. Ketika melakukan pencarian, terkadang output yang dihasilkan dapat menampilkan dokumen yang tidak relevan maka dari itu kami menganalisi metode yang menghasilkan dokumen yang paling relevan. Pada penelitian ini, kami menganalisis metode BM25 dengan with the Logarithm of the Length-Normalized Frequency in VSM. Okapi BM25 atau yang biasa disebut dengan BM25 adalah suatu sistem perangkingan yang digunakan untuk mengurutkan hasil kecocokan terhadap dokumen-dokumen, berdasarkan kata kunci yang dicarinya. BM25 ini merupakan formula terbaik dalam kelas best match, dikarenakan formula ini efektif dan memiliki ketepatan dalam mengurutkan dokumen berdasarkan query yang dicari . Dalam length-normalized frequency in VSM, setiap dokumen direpresentasikan sebagai vektor bernilai dari bobot tf-idf. Tahapan yang dilakukan adalah terlebih dahulu dataset yang digunakan akan dipreprocessing. Kemudian melakukan peranking terhadap dokumen yang relevan berdasarkan kata kunci yang diberikan. Hasil dari perangking tersebut akan dilakukan perbandingan dengan menggunakan evaluation metrics.
